@@ -1,8 +1,14 @@
+<script setup lang="ts">
+import Navigation from "~/components/navigation/Navigation.vue";
+import SideNavigation from "~/components/navigation/SideNavigation.vue";
+</script>
+
 <template>
-  <main>
-    <ContentDoc />
-    <p class="bg-red-500 text-xl font-light text-white">
-      Toto
-    </p>
+  <main class="font-display text-neutral-600">
+    <Navigation />
+    <div class="container mx-auto flex">
+      <SideNavigation />
+      <ContentDoc />
+    </div>
   </main>
 </template>
