@@ -1,7 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ["@nuxt/content", "@nuxt/eslint"],
+  modules: [
+    "@nuxt/content",
+    "@nuxt/eslint",
+    "@nuxtjs/tailwindcss",
+    "shadcn-nuxt",
+  ],
   routeRules: {
     "/": { prerender: true },
   },
@@ -14,5 +19,8 @@ export default defineNuxtConfig({
         commaDangle: "always-multiline",
       },
     },
+  },
+  shadcn: {
+    componentDir: "./components/ui",
   },
 });
