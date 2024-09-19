@@ -1,7 +1,6 @@
 <script setup lang="ts">
 
 import { Sheet, SheetTrigger } from "~/components/ui/sheet";
-import { Button } from "~/components/ui/button";
 import SideNavigation from "~/components/navigation/SideNavigation.vue";
 
 </script>

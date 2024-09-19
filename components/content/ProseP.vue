@@ -1,0 +1,5 @@
+<template>
+  <p class="text-justify">
+    <slot />
+  </p>
+</template>

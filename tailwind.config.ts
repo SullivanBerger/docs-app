@@ -20,7 +20,8 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        display: ["DM Sans", "sans-serif"],
+        display: ["Geist Sans", "sans-serif"],
+        decorative: ["DM Sans", "sans-serif"],
       },
       keyframes: {
         "accordion-down": {

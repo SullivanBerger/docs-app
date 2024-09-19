@@ -15,7 +15,7 @@
         fill="rgb(99 102 241)"
       />
     </svg>
-    <span class="text-lg font-semibold">Vibe<span class="text-indigo-500">Docs</span></span>
+    <span class="font-decorative text-lg font-semibold">Vibe<span class="text-indigo-500">Docs</span></span>
   </div>
 </template>
 
