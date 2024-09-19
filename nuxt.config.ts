@@ -6,6 +6,8 @@ export default defineNuxtConfig({
     "@nuxt/eslint",
     "@nuxtjs/tailwindcss",
     "shadcn-nuxt",
+    "@nuxt/icon",
+    "@nuxt/fonts",
   ],
   routeRules: {
     "/": { prerender: true },
@@ -22,5 +24,8 @@ export default defineNuxtConfig({
   },
   shadcn: {
     componentDir: "./components/ui",
+  },
+  fonts: {
+    provider: "fontsource",
   },
 });

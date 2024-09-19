@@ -1,6 +1,6 @@
 import * as animate from "tailwindcss-animate";
 
-/** @type {import('tailwindcss').Config} */
+/** @type {import("tailwindcss").Config} */
 module.exports = {
   darkMode: ["class"],
   content: [
@@ -19,6 +19,9 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        display: ["DM Sans", "sans-serif"],
+      },
       keyframes: {
         "accordion-down": {
           from: { height: 0 },
