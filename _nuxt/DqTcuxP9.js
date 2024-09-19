@@ -1,0 +1,1 @@
+import{k as s,c as t,e as o,H as c}from"./BNLoOIKV.js";const r={},n={class:"text-justify"};function a(e,_){return t(),o("p",n,[c(e.$slots,"default")])}const l=s(r,[["render",a]]);export{l as default};
