@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     "shadcn-nuxt",
     "@nuxt/icon",
     "@nuxt/fonts",
+    "@nuxt/image",
   ],
   routeRules: {
     "/": { prerender: true },

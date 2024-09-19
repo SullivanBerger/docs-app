@@ -9,10 +9,12 @@ export default withNuxt({
     "prefer-arrow-callback": ["error"],
     "prefer-template": ["error"],
     "sort-imports": ["error", {
-      allowSeparatedGroups: true,
+      ignoreDeclarationSort: true,
+      memberSyntaxSortOrder: ["none", "all", "single", "multiple"],
+      allowSeparatedGroups: true
     }],
     "vue/block-tag-newline": ["error", {
-      maxEmptyLines: 1,
-    }],
-  },
+      maxEmptyLines: 1
+    }]
+  }
 });
