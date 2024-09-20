@@ -10,7 +10,7 @@ const generate = computed(() => props.id && ((typeof headings?.anchorLinks === "
 <template>
   <h1
     :id="props.id"
-    class="pb-4 pt-6 font-decorative text-4xl font-bold"
+    class="mb-4 font-decorative text-4xl font-bold"
   >
     <a
       v-if="generate"
