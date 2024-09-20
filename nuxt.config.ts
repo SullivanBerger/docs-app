@@ -16,6 +16,7 @@ export default defineNuxtConfig({
     "@nuxt/fonts",
     "@nuxt/image",
     "@vueuse/nuxt",
+    "@nuxt/test-utils/module",
   ],
   routeRules: {
     "/": { prerender: true },
