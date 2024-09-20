@@ -8,18 +8,23 @@ import SideNavigation from "~/components/navigation/SideNavigation.vue";
 <template>
   <Sheet>
     <SheetTrigger as-child>
-      <Icon
-        name="ph:list-bold"
-        class="transition duration-300 ease-in-out hover:text-indigo-500"
-      />
+      <button>
+        <Icon
+          name="ph:list-bold"
+          class="transition duration-300 ease-in-out hover:text-indigo-500"
+        />
+      </button>
     </SheetTrigger>
     <SheetContent>
       <SheetHeader>
         <SheetTitle>
           <CompanyLogo />
         </SheetTitle>
+        <SheetDescription />
       </SheetHeader>
-      <SideNavigation class="my-6" />
+      <ClientOnly>
+        <SideNavigation />
+      </ClientOnly>
     </SheetContent>
   </Sheet>
 </template>

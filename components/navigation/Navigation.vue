@@ -1,14 +1,16 @@
 <script setup lang="ts">
 
-import { useMediaQuery } from "@vueuse/core";
+import { breakpointsTailwind } from "@vueuse/core";
 import MobileNavigation from "~/components/navigation/MobileNavigation.vue";
 
-const isMobile = useMediaQuery("(max-width: 767px)");
+const breakpoints = useBreakpoints(breakpointsTailwind);
+
+const mdAndSmaller = breakpoints.smaller("md");
 
 </script>
 
 <template>
-  <nav class="border border-b-neutral-200 py-4">
+  <nav class="fixed top-0 z-10 w-full border border-b-neutral-200 bg-white/80 py-4 backdrop-blur-sm ">
     <ul class="container mx-auto flex items-center space-x-4">
       <CompanyLogo class="flex-1" />
       <li class="pt-1">
@@ -23,9 +25,11 @@ const isMobile = useMediaQuery("(max-width: 767px)");
           icon-name="ph:github-logo-bold"
         />
       </li>
-      <li class="pt-1">
-        <MobileNavigation v-if="isMobile" />
-      </li>
+      <ClientOnly>
+        <li class="pt-1">
+          <MobileNavigation v-if="mdAndSmaller" />
+        </li>
+      </ClientOnly>
     </ul>
   </nav>
 </template>
