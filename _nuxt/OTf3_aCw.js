@@ -1,1 +1,0 @@
-import{k as t,c as s,e as c,H as o}from"./BNLoOIKV.js";const r={},n={class:"text-lg text-slate-500"};function a(e,l){return s(),c("p",n,[o(e.$slots,"default")])}const f=t(r,[["render",a]]);export{f as default};
