@@ -1,5 +1,8 @@
 <template>
-  <div class="flex items-center space-x-2">
+  <NuxtLink
+    to="/"
+    class="flex items-center space-x-2"
+  >
     <svg
       id="logo-71"
       width="24"
@@ -16,7 +19,7 @@
       />
     </svg>
     <span class="font-decorative text-lg font-semibold">Vibe<span class="text-indigo-500">Docs</span></span>
-  </div>
+  </NuxtLink>
 </template>
 
 <script setup lang="ts">
