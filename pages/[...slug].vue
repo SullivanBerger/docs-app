@@ -10,9 +10,12 @@ const isDesktopScreen = useMediaQuery("(min-width: 768px)");
 <template>
   <main class="font-display text-neutral-800 antialiased">
     <Navigation />
-    <div class="container mx-auto flex">
-      <SideNavigation v-if="isDesktopScreen" />
-      <ContentDoc />
+    <div class="container mx-auto flex md:space-x-8">
+      <SideNavigation
+        v-if="isDesktopScreen"
+        class="w-1/6"
+      />
+      <ContentDoc class="md:w-4/6" />
     </div>
   </main>
 </template>

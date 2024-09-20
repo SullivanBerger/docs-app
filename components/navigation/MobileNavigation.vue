@@ -14,6 +14,11 @@ import SideNavigation from "~/components/navigation/SideNavigation.vue";
       />
     </SheetTrigger>
     <SheetContent>
+      <SheetHeader>
+        <SheetTitle>
+          <CompanyLogo />
+        </SheetTitle>
+      </SheetHeader>
       <SideNavigation />
     </SheetContent>
   </Sheet>
