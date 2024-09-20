@@ -9,7 +9,7 @@ const isMobile = useMediaQuery("(max-width: 767px)");
 
 <template>
   <nav class="border border-b-neutral-200 py-4">
-    <ul class="mx-auto flex w-5/6 items-center space-x-4 md:w-4/6">
+    <ul class="container mx-auto flex items-center space-x-4">
       <CompanyLogo class="flex-1" />
       <li class="pt-1">
         <NavigationLinkIcon
