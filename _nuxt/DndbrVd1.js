@@ -1,0 +1,1 @@
+import{k as t,c as s,e as o,J as c}from"./BYs9OLk_.js";const r={},n={class:"pt-2 text-justify"};function a(e,_){return s(),o("p",n,[c(e.$slots,"default")])}const l=t(r,[["render",a]]);export{l as default};
