@@ -3,7 +3,7 @@
 import { useMediaQuery } from "@vueuse/core";
 import MobileNavigation from "~/components/navigation/MobileNavigation.vue";
 
-const isMobileScreen = useMediaQuery("(max-width: 767px)");
+const isMobile = useMediaQuery("(max-width: 767px)");
 
 </script>
 
@@ -24,7 +24,7 @@ const isMobileScreen = useMediaQuery("(max-width: 767px)");
         />
       </li>
       <li class="pt-1">
-        <MobileNavigation v-if="isMobileScreen" />
+        <MobileNavigation v-if="isMobile" />
       </li>
     </ul>
   </nav>

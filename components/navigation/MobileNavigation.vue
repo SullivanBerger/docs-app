@@ -19,7 +19,7 @@ import SideNavigation from "~/components/navigation/SideNavigation.vue";
           <CompanyLogo />
         </SheetTitle>
       </SheetHeader>
-      <SideNavigation />
+      <SideNavigation class="my-6" />
     </SheetContent>
   </Sheet>
 </template>
